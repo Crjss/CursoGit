@@ -18,3 +18,7 @@ Muestra una lista de todos los cambios que se han hecho en el proyecto a lo larg
 ## README
 El `README` es como una carta de presentación para el proyecto. Está escrito en un formato llamado Markdown para que sea fácil de entender y se vea bien organizado.<br>
 [**Tutorial Markdown**](https://tutorialmarkdown.com/sintaxis)
+## COMANDO: git branch 
+Devuelve todas las ramas que existen.
+## COMANDO: git branch nombre_Rama
+Crea la rama a partir de la rama en la que nos encontramos, los cambios que ocurren en una rama no afectan a otras hasta utilizar un merge.
