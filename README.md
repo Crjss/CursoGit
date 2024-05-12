@@ -29,3 +29,7 @@ Obtiene los cambios de la rama indicada en el comando y los actualiza en la rama
 ## COMANDO: git config
 1. --global user.name `<nombreUsuario>`
 2. --global user.email `<email>`
+3. ## File explorer y las ramas
+Los archivos y sus cambios se van a mostrar de acuerdo a la rama en la que nos encontremos, cuando entres a alguna rama algunas veces el archivo no sera el mismo que en otra rama.
+## Conflictos
+Dos ramas modifican el mismo archivo, entonces Git no sabes que version del archivo implementar.
