@@ -44,3 +44,12 @@ Una rama A se fusiona a la rama B incluyendo los commits **(git merge `<rama>`)*
 ## No fast forward
 Una rama A se fusiona a la rama B integrados los cambios de A en B, pero con la diferencia de que la visualización de la rama A queda separada de la rama B se podria decir una mejor visualizacion **(git merge `<rama>` --no-ff)**
 *Tanto si usamos Fast forward como No fast forward solo cambiara la forma en la que visualizaremos el histórico de nuestro repositorio*
+## COMANDO: git merge -s ours `<rama>`
+Los cambios de la rama A se conservan mientras no hayan conflictos con la rama B, en caso de conflicto se prioriza lo que está en la rama B
+## COMANDO: git merge -s theirs `<rama>`
+Los cambios de la rama A se conservan mientras no hayan conflictos con la rama B, en caso de conflicto se prioriza lo que está en la rama A
+### Ejemplo
+![Ours and Theirs](Imágenes/Merge%20ours%20and%20theirs.png)
+
+## COMANDO: git pull-request
+Petición para hacer cambios en la rama main.
