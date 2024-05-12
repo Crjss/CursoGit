@@ -22,3 +22,10 @@ El `README` es como una carta de presentación para el proyecto. Está escrito e
 Devuelve todas las ramas que existen.
 ## COMANDO: git branch nombre_Rama
 Crea la rama a partir de la rama en la que nos encontramos, los cambios que ocurren en una rama no afectan a otras hasta utilizar un merge.
+## COMANDO: git switch nombre_Rama
+Nos permite navegar entre las ramas.
+## COMANDO: git merge nombre_Rama
+Obtiene los cambios de la rama indicada en el comando y los actualiza en la rama en la que nos encontramos; es como mezclar ingredientes para tener la receta completa en un solo lugar.
+## COMANDO: git config
+1. --global user.name `<nombreUsuario>`
+2. --global user.email `<email>`
