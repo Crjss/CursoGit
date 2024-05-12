@@ -67,4 +67,26 @@ Comando para clonar la rama principal de un repositorio pero con **git switch `<
 ## COMANDO: git pull
 Comando para agregar una rama a nuestro repositorio local, luego debemos escribir ***git switch `<nombre_rama>`*** para ingresar a la rama y así poder visibilizarla con el **git branch**.
 1. **git pull origin `<nombre_rama>`**
-2. 
+2. ## Flujo de Trabajo en equipos
+Conjunto de reglas a las cuales se rige un repositorio.
+## 1. Basic Workflow
+Usualmente se usa individualmente en un proyecto pequeño.
+
+![Basic](Imágenes/Basic.png)
+
+## 2. Feature Branch Workflow
+Suele ser usado en trabajos en equipo para proyectos pequeños.
+
+![Feature Branch](Imágenes/Feature%20branch.png)
+
+## 3. Gitflow Workflow
+Se utilizan en trabajos en equipo para proyectos más grandes y extensos.
+
+![Gitflow](Imágenes/Gitflow.png)
+
+1. Main.- Es la versión del proyecto, en esta rama se añaden los proyectos ya finalizados y que hayan pasado por el release o hotfix en algunos casos.
+2. Hotfix.- Es un parcheo o arreglo inmediato del proyecto. De aquí nacen las versiones 1.2, 2.1.2, etc
+3. Release.- Últimos detalles como revisiones, documentación concisa y testeo.
+4. Develop.- Desarrollo y documentación de código.
+5. Feature.- Ramas de desarrollo pertenecientes a cada integrante del equipo.<br>
+**De la rama Main al Develop son únicas**
