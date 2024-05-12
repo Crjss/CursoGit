@@ -53,3 +53,18 @@ Los cambios de la rama A se conservan mientras no hayan conflictos con la rama B
 
 ## COMANDO: git pull-request
 Petición para hacer cambios en la rama main.
+## GitHub
+Es un repositorio en la nube, existen otros como GitLab o Bitbucket.
+## COMANDO: git remote -v
+Nos permite ver el repositorio remoto al que estamos conectados.
+## COMANDO: git remote add origin `<URL>`
+Obtenemos acceso al repositorio en la nube. <br>
+Origin es el fuente/origen del repositorio en el que trabajaremo en GitHub basicamente es como un sobrenombre.
+## COMANDO: git push origin main
+Subimos una rama <main> al repositorio origin.
+## COMANDO: git clone `<URL>`
+Comando para clonar la rama principal de un repositorio pero con **git switch `<nombre_rama>`** podemos ingresar a las otras ramas existentes del repositorio.
+## COMANDO: git pull
+Comando para agregar una rama a nuestro repositorio local, luego debemos escribir ***git switch `<nombre_rama>`*** para ingresar a la rama y así poder visibilizarla con el **git branch**.
+1. **git pull origin `<nombre_rama>`**
+2. 
