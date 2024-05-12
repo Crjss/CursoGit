@@ -33,3 +33,14 @@ Obtiene los cambios de la rama indicada en el comando y los actualiza en la rama
 Los archivos y sus cambios se van a mostrar de acuerdo a la rama en la que nos encontremos, cuando entres a alguna rama algunas veces el archivo no sera el mismo que en otra rama.
 ## Conflictos
 Dos ramas modifican el mismo archivo, entonces Git no sabes que version del archivo implementar.
+## Ramas
+1. Main/Master.- Es la rama principal.
+2. Otras ramas.- Son bifurcaciones de la rama principal, son copias del proyecto pero separada para poder ser trabajadas sin poner en riesgo otras ramas.
+
+![Ramas](Imágenes/Ramas.png)
+
+## Fast forward
+Una rama A se fusiona a la rama B incluyendo los commits **(git merge `<rama>`)**.
+## No fast forward
+Una rama A se fusiona a la rama B integrados los cambios de A en B, pero con la diferencia de que la visualización de la rama A queda separada de la rama B se podria decir una mejor visualizacion **(git merge `<rama>` --no-ff)**
+*Tanto si usamos Fast forward como No fast forward solo cambiara la forma en la que visualizaremos el histórico de nuestro repositorio*
