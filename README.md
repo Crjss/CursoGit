@@ -90,3 +90,27 @@ Se utilizan en trabajos en equipo para proyectos más grandes y extensos.
 4. Develop.- Desarrollo y documentación de código.
 5. Feature.- Ramas de desarrollo pertenecientes a cada integrante del equipo.<br>
 **De la rama Main al Develop son únicas**
+## 4. Forking Workflow
+Consiste en clonar el repositorio y emplear algunos de los anteriores Workflow
+
+![Forking](Imágenes/Forking.png)
+
+## Alias
+Sirve para relacionar un comando extenso a un comando elaborado por uno mismo.
+- Ejemplo 1: **git config --global alias.co checkout**
+- Ejemplo 2: **git config --global alias.last 'log -1 HEAD'**
+- Enlistar alias: **git config --list | grep alias**
+- Borrar alias: **git config --global --unset alias.`<nombre_Alias>`**
+## Stash
+Son guardados rápidos y temporales que se hacen en Git, se usan para poder cambiar de rama sin realizar commits ni perjudicar la rama actual.
+- Guardar la rama temporalmente: **git stash**
+- Ver la lista de stash: **git stash list**
+- Recuperar un stash específico: **git stash apply stash@{`<N>`}**
+- Recuperar el último stash y lo elimina del stash: **git stash pop**
+- Eliminar un stash especifico: **git stash drop stash@{`<N>`}**
+- Eliminar todos los stash: **git stash clear**
+
+## Busquedas Grep
+Son realmente rápidas, busca a través de cualquier árbol en Git, no solo en el directorio de trabajo.
+- Encontrar coincidencias por archivo: **git grep -n `<pattern>`**
+- Enumerar coincidencias por archivo: **git grep -c `<pattern>`**
